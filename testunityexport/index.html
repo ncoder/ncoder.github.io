@@ -47,7 +47,9 @@ function init() {
     renderer = new THREE.WebGLRenderer( { antialias: true } );
     renderer.setClearColor( 0x333333 );
     renderer.setSize( window.innerWidth, window.innerHeight );
-    renderer.setPixelRatio( window.devicePixelRatio );
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.gammaInput = true;
+    renderer.gammaOutput = true;
     container.appendChild( renderer.domElement );
 	
     // Load scene - Begin
