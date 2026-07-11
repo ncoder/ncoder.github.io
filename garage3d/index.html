@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garage 3D Viewer</title>
+    <script type="module" crossorigin src="/garage3d/assets/index-DPxNrkin.js"></script>
+    <link rel="stylesheet" crossorigin href="/garage3d/assets/index-CXcC2sql.css">
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="c"></canvas>
+      <div id="overlay">
+        <p>Click to enter</p>
+        <p id="overlay-hint" class="hint">WASD move · mouse look · Shift sprint · Esc unlock</p>
+      </div>
+      <div id="hud">
+        <div id="status">Loading…</div>
+        <div id="geo">
+          <div>Lat <span id="lat">—</span></div>
+          <div>Lon <span id="lon">—</span></div>
+          <div>Alt <span id="alt">—</span> m</div>
+        </div>
+      </div>
+      <div id="spawn-panel">
+        <div id="spawn-list"></div>
+      </div>
+    </div>
+  </body>
+</html>
